@@ -1,0 +1,26 @@
+{
+  "name": "SWL2001",
+  "version": "0.1.0",
+  "description": "LoRaWAN Library",
+  "keywords": "LoRa, LoRaWAN, SX126x, SX127x",
+  "authors": [
+    {
+      "name": "LoRa-NET",
+      "url": "https://github.com/Lora-net",
+      "maintainer": true
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lora-net/SWL2001.git"
+  },
+  "homepage": "https://github.com/Lora-net/SWL2001",
+  "export": {
+    "include": [
+      "lbm_lib/*"
+    ]
+  },
+  "frameworks": "*",
+  "platforms": "*",
+  "license": "BDS-3"
+}
