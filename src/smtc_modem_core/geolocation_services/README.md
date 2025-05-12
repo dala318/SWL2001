@@ -188,7 +188,7 @@ It is to be noted that the same ADR configuration will be used for sending geolo
 
 ### 2.13. API & files
 
-The GNSS scan & send API functions are available in the lbm_lib/smtc_modem_api/smtc_modem_geolocation_api.h file.
+The GNSS scan & send API functions are available in the src/smtc_modem_api/smtc_modem_geolocation_api.h file.
 
 The implementation of the services is in the following files:
 * GNSS scan service: mw_gnss_scan.h/c
@@ -287,7 +287,7 @@ The rational behind all this is to let the almanac update progress as fast as po
 
 ### 3.9. API & files
 
-The almanac demodulation service API functions are available in the lbm_lib/smtc_modem_api/smtc_modem_geolocation_api.h file.
+The almanac demodulation service API functions are available in the src/smtc_modem_api/smtc_modem_geolocation_api.h file.
 
 The implementation of the service is in the following files:
 * mw_gnss_almanac.h/c
@@ -408,7 +408,7 @@ It is to be noted that the same ADR configuration will be used for sending geolo
 
 ### 4.9. API & files
 
-The Wi-Fi scan & send API functions are available in the lbm_lib/smtc_modem_api/smtc_modem_geolocation_api.h file.
+The Wi-Fi scan & send API functions are available in the src/smtc_modem_api/smtc_modem_geolocation_api.h file.
 
 The implementation of the services is in the following files:
 * Wi-Fi scan service: mw_wifi_scan.h/c

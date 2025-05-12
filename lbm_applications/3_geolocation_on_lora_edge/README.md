@@ -30,7 +30,7 @@ The services used are:
 
 For more details about the GNSS and Wi-Fi services, please refer to the documentation here:
 
-[Geolocation services documentation](<../../lbm_lib/smtc_modem_core/geolocation_services/README.md>)
+[Geolocation services documentation](<../../src/smtc_modem_core/geolocation_services/README.md>)
 
 ## LoRa Basics Modem configuration
 

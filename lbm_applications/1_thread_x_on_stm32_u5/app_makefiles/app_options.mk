@@ -3,7 +3,7 @@
 #-----------------------------------------------------------------------------
 
 # Lora Basics Modem path
-LORA_BASICS_MODEM := ../../lbm_lib
+LORA_BASICS_MODEM := ../../src
 
 # Prefix for all build directories
 APPBUILD_ROOT = build

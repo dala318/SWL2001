@@ -28,8 +28,8 @@ LBM library code has been developed using GNU Arm Embedded Toolchain 10-2020-q4-
 
 ## LoRa Basics Modem library
 
-LBM library code can be found in folder [lbm_lib](lbm_lib/).  
-Please refer to [README.md](lbm_lib/README.md) to get all information related to LoRa Basics Modem library
+LBM library code can be found in folder [src](src/).  
+Please refer to [README.md](src/README.md) to get all information related to LoRa Basics Modem library
 
 ## Examples
 

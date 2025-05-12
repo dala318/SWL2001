@@ -8,8 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 This version is based on feature branch v4.5.0 of the LoRa Basics Modem.
 
-Detailed Modem API changelog can be found [here](lbm_lib/smtc_modem_api/CHANGELOG.md)
-Detailed Modem HAL changelog can be found [here](lbm_lib/smtc_modem_hal/CHANGELOG.md)
+Detailed Modem API changelog can be found [here](src/smtc_modem_api/CHANGELOG.md)
+Detailed Modem HAL changelog can be found [here](src/smtc_modem_hal/CHANGELOG.md)
 
 ### Added
 
@@ -22,8 +22,8 @@ Detailed Modem HAL changelog can be found [here](lbm_lib/smtc_modem_hal/CHANGELO
 * Enable CSMA by default for lbm_examples
 * Update RAL with instantaneous power consumption obtained through BSP
 * Implement the RAL BSP instantaneous power consumption getters for supported radio in examples
-* [lr11xx-driver] Update lr11xx radio driver to v2.5.2 version ([CHANGELOG.md](lbm_lib/smtc_modem_core/radio_drivers/lr11xx_driver/CHANGELOG.md))
-* [sx126x-driver] Update sx126x radio driver to v2.3.2 version ([CHANGELOG.md](lbm_lib/smtc_modem_core/radio_drivers/sx126x_driver/CHANGELOG.md))
+* [lr11xx-driver] Update lr11xx radio driver to v2.5.2 version ([CHANGELOG.md](src/smtc_modem_core/radio_drivers/lr11xx_driver/CHANGELOG.md))
+* [sx126x-driver] Update sx126x radio driver to v2.3.2 version ([CHANGELOG.md](src/smtc_modem_core/radio_drivers/sx126x_driver/CHANGELOG.md))
 
 ### Fixed
 
@@ -92,7 +92,7 @@ This version fix the 4.3.0 version.
 ## [v4.4.0] 2023-12-21
 
 This version is based on feature branch v4.3.0 of the LoRa Basics Modem.
-Detailed Modem API changelog can be found [here](lbm_lib/smtc_modem_api/CHANGELOG.md)
+Detailed Modem API changelog can be found [here](src/smtc_modem_api/CHANGELOG.md)
 
 !!! Important !!! Due to bugfixes in WOR protocol, this version is not compatible with version 4.2.0 release in July 2023. Please update both the relay RX and the relay TX.
 
@@ -127,8 +127,8 @@ Detailed Modem API changelog can be found [here](lbm_lib/smtc_modem_api/CHANGELO
 
 This version is based on feature branch v4.1.0 of the LoRa Basics Modem.
 
-Detailed Modem API changelog can be found [here](lbm_lib/smtc_modem_api/CHANGELOG.md)
-Detailed Modem HAL changelog can be found [here](lbm_lib/smtc_modem_hal/CHANGELOG.md)
+Detailed Modem API changelog can be found [here](src/smtc_modem_api/CHANGELOG.md)
+Detailed Modem HAL changelog can be found [here](src/smtc_modem_hal/CHANGELOG.md)
 
 ### Added
 
@@ -163,13 +163,13 @@ Detailed Modem HAL changelog can be found [here](lbm_lib/smtc_modem_hal/CHANGELO
 ### Changed
 
 * [general] Change repository organization to ease readability.  
-            Put all LoRa Basics Modem library related code in `lbm_lib` folder.
+            Put all LoRa Basics Modem library related code in `src` folder.
             Rename `utilities` folder into `lbm_examples` for generic Lora Basics Modem examples
 * [lorawan-package] Change `lorawan_packages` folder organization to use a dedicated folder for each packages instead of fuota_v1 and fuota_V2
 
-* [lr11xx-driver] Update lr11xx radio driver to v2.4.0 version ([CHANGELOG.md](lbm_lib/smtc_modem_core/radio_drivers/lr11xx_driver/CHANGELOG.md))
-* [sx126x-driver] Update sx126x radio driver to v2.3.1 version ([CHANGELOG.md](lbm_lib/smtc_modem_core/radio_drivers/sx126x_driver/CHANGELOG.md))
-* [sx128x-driver] Update sx128x radio driver to v1.0.0 version ([CHANGELOG.md](lbm_lib/smtc_modem_core/radio_drivers/sx128x_driver/CHANGELOG.md))
+* [lr11xx-driver] Update lr11xx radio driver to v2.4.0 version ([CHANGELOG.md](src/smtc_modem_core/radio_drivers/lr11xx_driver/CHANGELOG.md))
+* [sx126x-driver] Update sx126x radio driver to v2.3.1 version ([CHANGELOG.md](src/smtc_modem_core/radio_drivers/sx126x_driver/CHANGELOG.md))
+* [sx128x-driver] Update sx128x radio driver to v1.0.0 version ([CHANGELOG.md](src/smtc_modem_core/radio_drivers/sx128x_driver/CHANGELOG.md))
 * [makefile] Set all LBM features options to `no` by default
 * [certification-service] Update certification service to support FUOTA certification
 

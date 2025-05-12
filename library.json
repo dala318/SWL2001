@@ -15,11 +15,6 @@
     "url": "https://github.com/Lora-net/SWL2001.git"
   },
   "homepage": "https://github.com/Lora-net/SWL2001",
-  "export": {
-    "include": [
-      "lbm_lib/*"
-    ]
-  },
   "frameworks": "*",
   "platforms": "*",
   "license": "BDS-3"

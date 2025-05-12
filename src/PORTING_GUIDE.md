@@ -23,7 +23,7 @@ In this case, it is recommended to use an accurate crystal oscillator to clock t
 
 ## Transceiver Requirements
 
-The transceivers supported by LoRa Basics Modem and their associated version if applicable can be found in LoRa Basics Modem [README.md](lbm_lib/README.md) file.  
+The transceivers supported by LoRa Basics Modem and their associated version if applicable can be found in LoRa Basics Modem [README.md](src/README.md) file.  
 In certain situations, such as the use of GNSS reception with the LR11xx, a transceiver TCXO is required. When using GNSS advanced scan on the LR11xx, the TCXO must have a relatively fast settling time, and the 32.768 kHz crystal oscillator must have 20ppm accuracy at 25 degrees.
 
 ## System Design Considerations
@@ -69,7 +69,7 @@ The LoRa Basics Modem imposes a specific requirement on the radio driver HAL imp
 When compiling the radio driver HAL implementation, it is necessary to add the radio driver source directory to the include path.  
 For example, for LR11xx:
 
-- `lbm_lib/smtc_modem_core/radio_drivers/lr11xx_driver/src`
+- `src/smtc_modem_core/radio_drivers/lr11xx_driver/src`
 
 ## RAL BSP Implementation
 
@@ -97,8 +97,8 @@ The RAL requires the implementer to define a few BSP API functions for the selec
 The role of the 'const void* context' variable is described in previous section. It is typically used to store radio-specific information, but depending on the radio driver BSP implementation, it may be NULL if a single transceiver is used.  
 When compiling the RAL BSP implementation, it is necessary to add the radio driver source directory and the RAL source directory to the include path. For example, for LR11xx:
 
-- `lbm_lib/smtc_modem_core/radio_drivers/lr11xx_driver/src`
-- `lbm_lib/smtc_modem_core/smtc_ral/src`
+- `src/smtc_modem_core/radio_drivers/lr11xx_driver/src`
+- `src/smtc_modem_core/smtc_ral/src`
 
 ## LoRa Basics Modem HAL Implementation
 
