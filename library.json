@@ -15,6 +15,44 @@
     "url": "https://github.com/Lora-net/SWL2001.git"
   },
   "homepage": "https://github.com/Lora-net/SWL2001",
+  "export": {
+    "include": [
+      "src/*"
+    ]
+  },
+  "build": {
+    "includeDir": "src",
+    "srcDir": "src",
+    "flags": [
+      "-I src/smtc_modem_api",
+      "-I src/smtc_modem_core",
+      "-I src/smtc_modem_core/logging",
+      "-I src/smtc_modem_core/lorawan_api",
+      "-I src/smtc_modem_core/lorawan_manager",
+      "-I src/smtc_modem_core/lorawan_packages/application_layer_clock_syncronization",
+      "-I src/smtc_modem_core/lorawan_packages/firmware_management_protocol",
+      "-I src/smtc_modem_core/lorawan_packages/fragmented_data_block_transport",
+      "-I src/smtc_modem_core/lorawan_packages/lorawan_certification",
+      "-I src/smtc_modem_core/lorawan_packages/multi_package_access",
+      "-I src/smtc_modem_core/lorawan_packages/remote_multicast_setup",
+      "-I src/smtc_modem_core/lr1mac/src",
+      "-I src/smtc_modem_core/lr1mac/src/services",
+      "-I src/smtc_modem_core/lr1mac/src/smtc_real/src",
+      "-I src/smtc_modem_core/modem_services",
+      "-I src/smtc_modem_core/modem_supervisor",
+      "-I src/smtc_modem_core/modem_utilities",
+      "-I src/smtc_modem_core/radio_drivers",
+      "-I src/smtc_modem_core/radio_drivers/lr11xx_driver/src",
+      "-I src/smtc_modem_core/radio_planner/src",
+      "-I src/smtc_modem_core/smtc_modem_crypto/smtc_secure_element",
+      "-I src/smtc_modem_core/smtc_ral/src",
+      "-I src/smtc_modem_core/smtc_ralf/src",
+      "-I src/smtc_modem_hal"
+    ],
+    "srcFilter": [
+      "-<smtc_modem_core/geolocation_services/>"
+    ]
+  },
   "frameworks": "*",
   "platforms": "*",
   "license": "BDS-3"
