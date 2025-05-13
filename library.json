@@ -44,13 +44,28 @@
       "-I src/smtc_modem_core/radio_drivers",
       "-I src/smtc_modem_core/radio_drivers/lr11xx_driver/src",
       "-I src/smtc_modem_core/radio_planner/src",
+      "-I src/smtc_modem_core/smtc_modem_crypto",
       "-I src/smtc_modem_core/smtc_modem_crypto/smtc_secure_element",
       "-I src/smtc_modem_core/smtc_ral/src",
       "-I src/smtc_modem_core/smtc_ralf/src",
       "-I src/smtc_modem_hal"
     ],
     "srcFilter": [
-      "-<smtc_modem_core/geolocation_services/>"
+      "-<smtc_modem_core/geolocation_services/>",
+      "-<smtc_modem_core/smtc_modem_test.c>",
+      "+<smtc_modem_core/lorawan_api/lorawan_api.c>",
+      "+<smtc_modem_core/smtc_modem_crypto/smtc_modem_crypto.c>",
+      "+<smtc_modem_core/modem_utilities/modem_event_utilities.c>",
+      "+<smtc_modem_core/modem_utilities/fifo_ctrl.c>",
+      "+<smtc_modem_core/modem_utilities/modem_core.c>",
+      "+<smtc_modem_core/modem_supervisor/modem_supervisor_light.c>",
+      "+<smtc_modem_core/modem_supervisor/modem_tx_protocol_manager.c>",
+      "+<smtc_modem_core/lorawan_packages/lorawan_certification/lorawan_certification.c>",
+      "+<smtc_modem_core/lorawan_manager/lorawan_join_management.c>",
+      "+<smtc_modem_core/lorawan_manager/lorawan_send_management.c>",
+      "+<smtc_modem_core/lorawan_manager/lorawan_cid_request_management.c>",
+      "+<smtc_modem_core/lorawan_manager/lorawan_dwn_ack_management.c>",
+      "+<smtc_modem_core/radio_planner/src/radio_planner.c>"
     ]
   },
   "frameworks": "*",
